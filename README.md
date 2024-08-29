@@ -29,6 +29,7 @@ Ele permite que você obtenha detalhes de Pokémon com base no nome ou número a
 
 1. Importe o arquivo SQL para configurar a tabela pokemon,
 Você pode usar o phpMyAdmin ou o comando de terminal para importar:
+```mysql -u seu_usuario -p seu_banco_de_dados < caminho_para_arquivo/pokemon.sql ```
 
 2. Configurar a conexão com o banco de dados:
 Edite `conexao.php` com as informações corretas do seu banco de dados
