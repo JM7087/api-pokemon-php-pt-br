@@ -38,12 +38,13 @@ if (!empty($nomeOuNumeroDoPokemon)) {
     $pokemon = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-// Adicionar URL completa para a imagem, ajuste como nesesario.
+// Adicionar URL completa para a imagem com o caminho ajustado para 'imgem'
 $baseUrl = getBaseUrl();
 foreach ($pokemon as &$p) {
-    $p['imagem'] = $baseUrl . '/'. 'api-pokemon-php' .'/' . $p['imagem'];
+    $p['imagem'] = $baseUrl . '/api-pokemon-php/imagem/' . basename($p['imagem']); // Alteração realizada aqui
 }
 
 // Retornar os pokemons em formato JSON
 header('Content-Type: application/json');
 echo json_encode($pokemon);
+?>

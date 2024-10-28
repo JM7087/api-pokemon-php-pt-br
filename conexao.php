@@ -2,9 +2,9 @@
 
 // Configurações do banco de dados
 $host = 'localhost';
-$db = 'seu_banco_de_dados';
-$user = 'seu_usuario';
-$pass = 'sua_senha';
+$dbname = 'pokemon_api_backup';
+$username = 'api';
+$password = '123';
 
 // Tentar estabelecer a conexão com o banco de dados
 try {
